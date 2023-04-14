@@ -62,7 +62,7 @@ function getURLsFromHTML(htmlBody, baseURL){
                 urls.push(urlObj.href)
             }
             catch(err){
-                console.log(`error with relatice url: ${err.message}` )
+                console.log(`error with relatice url: ${err.message} at  ${linkElement.href}` )
             }
             
         }
@@ -73,7 +73,7 @@ function getURLsFromHTML(htmlBody, baseURL){
                 urls.push(urlObj.href)
             }
             catch(err){
-                console.log(`error with relatice url: ${err.message}` )
+                console.log(`error with relatice url: ${err.message} at ${linkElement.href}` )
             }
         }
     }
